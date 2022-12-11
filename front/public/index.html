@@ -2,13 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+ -->    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,9 +31,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Трамвай жизни</title>
   </head>
   <body>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +47,253 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+
+    <nav id="navbar" class="navbar">
+      <div class="container">
+        <a href="#header" class="navbar-brand">Трамвай жизни</a>
+        <div class="navbar-wrap">
+          <ul class="navbar-menu">
+            <li><a href="#instruction">Вагон</a></li>
+            <li><a href="#">Платформа</a></li>
+            <li><a href="#">Длинный паровозик</a></li>
+            <!-- <li><a href="#">вапвапвпавп</a></li> -->
+          </ul>
+          <a href="#rooms" class="playing">Играть</a>
+        </div>
+
+      </div>
+    </nav>
+
+    <header id="header" class="header" style="background-image: url(https://www.pinpalace.it/wp-content/uploads/2018/09/img_tabgame-1920x1080.jpg);">
+      <div class="container">
+        <h1 class="header-title">Сможете ли Вы сделать нелёгкий выбор?</h1>
+
+      </div>
+    </header>  
+    <div class="header-overlay"></div>
+
+    <div class="instruction" id="instruction">
+      <input checked type="radio" name="respond" id="desktop">
+      <article class="slider">
+        <input checked type="radio" name="slider" id="switch1">
+        <input checked type="radio" name="slider" id="switch2">
+        <input checked type="radio" name="slider" id="switch3">
+        <input checked type="radio" name="slider" id="switch4">
+        <input checked type="radio" name="slider" id="switch5">
+        
+        <div class="slides">
+          <div class="overflow">
+            <div class="image-instruction">
+              <article><img src="img/instruction-1.jpg"></article>
+              <article><img src="img/instruction-2.jpg"></article>
+              <article><img src="img/instruction-3.jpg"></article>
+              <article><img src="img/instruction-4.jpg"></article>
+              <article><img src="img/instruction-5.jpg"></article>
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+          <label for="switch4"></label>
+          <label for="switch5"></label>
+        </div>
+        <div class="controls-active">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+          <label for="switch4"></label>
+          <label for="switch5"></label>
+        </div>
+      </article>
+    </div>
+
+    <div id="rooms" class="rooms">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://via.placeholder.com/300x400">
+              </div>
+              <div class="info">
+                <h3>Name Room</h3>
+                <ul class="filling">
+                  <!-- это наполнение комнаты, можно сменить значок на другой, но вроде норм -->
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Creator</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://via.placeholder.com/300x400">
+              </div>
+              <div class="info">
+                <h3>Name Room</h3>
+                <ul class="filling">
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Creator</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://via.placeholder.com/300x400">
+              </div>
+              <div class="info">
+                <h3>Name Room</h3>
+                <ul class="filling">
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Creator</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://via.placeholder.com/300x400">
+              </div>
+              <div class="info">
+                <h3>Name Room</h3>
+                <ul class="filling">
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Creator</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://www.ohli24.net/data/editor/2101/300a41e333aa9286d6b06abc0a4761dd_1609950798_9273.jpg">
+              </div>
+              <div class="info">
+                <h3>Посиделки</h3>
+                <ul class="filling">
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Васян1502</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://petropavlovsk-kamchatskiy.sportsimvol.ru/upload/iblock/d4a/ammcbwkz1i7s145afwgku674vat35rn9.jpg">
+              </div>
+              <div class="info">
+                <h3>Competition</h3>
+                <ul class="filling">
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Organizer</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="room">
+              <div class="image-creator">
+                <!-- тут типо фотка создателя игровой комнаты -->
+                <img src="https://i.ebayimg.com/images/g/l70AAOSwf~hgH7fa/s-l400.jpg">
+              </div>
+              <div class="info">
+                <h3>Viver room</h3>
+                <ul class="filling">
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star"></ion-icon></li>
+                  <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <div class="info-creator">
+                  <span class="creator">Anonymus</span>
+                  <button class="play"><ion-icon name="play"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script>
+      // Сразу создаём переменные
+      let navbar = document.getElementById('navbar').classList
+      let active_class = "navbar-scrolled"
+
+      /**
+       * Слушаем событие прокрутки
+       */
+      window.addEventListener('scroll', e => {
+        if(pageYOffset > 500) navbar.add(active_class)
+        else navbar.remove(active_class)
+      })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
   </body>
 </html>
